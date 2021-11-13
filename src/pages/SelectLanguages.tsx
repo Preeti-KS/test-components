@@ -54,7 +54,7 @@ const languageOptions: LanguageData[] = [
 
 type SelectLanguagesProps = {}
 function SelectLanguages(props: SelectLanguagesProps) {
-    const [selectedLanguages, setSelectedLanguages] = useState([])
+    const [selectedLanguages] = useState([])
 
     return (
         <>

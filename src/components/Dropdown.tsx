@@ -2,38 +2,48 @@ import { useState } from "react"
 import styled from "styled-components"
 
 const DropDownContainer = styled.div`
-    padding: 2 rem;
+    //padding: 2 rem;
+    width: 16rem;
 `
 
 const DropDownHeader = styled.button`
     margin-left: 0px;
     margin-top: 10px;
-    width: 300px;
+    width: 100%;
     height: 25px;
     border-radius: 3px;
     border-width: 1px;
     border-style: solid;
     border-color: grey;
+    cursor: pointer;
 `
 const List = styled.ul`
     list-style: none;
     padding: 0px;
     margin: 0px;
-    padding-left: 1em;
+    /* padding-left: 1em; */
     background: white;
     border: 2px solid #e5e5e5;
     box-sizing: border-box;
     color: #050708;
     font-size: 1.2rem;
     font-weight: 400;
-    &:first-child {
-        padding-top: 0.8em;
-    }
+    display: flex;
+    flex-direction: column;
 `
 
 const Option = styled.li`
     cursor: pointer;
-    margin-left: 135px;
+    /* margin-left: 135px; */
+    display: flex;
+    justify-content: center;
+    padding: 0.1rem;
+    border: black;
+    border-top: 1px solid #ddd;
+
+    &:first-child {
+        border-top: none;
+    }
 `
 
 function Dropdown() {

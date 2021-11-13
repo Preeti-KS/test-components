@@ -2,11 +2,7 @@ import "./App.css"
 import Routes from "./Routes"
 
 function App() {
-    return (
-        <div className="App">
-            <Routes></Routes>
-        </div>
-    )
+    return <Routes></Routes>
 }
 
 export default App
